@@ -1,0 +1,135 @@
+// Package
+[
+  {
+  "group": "A",
+  "features": [
+    {
+      "id": 1,
+      "name": "Levantamento detalhado do Apartamento"
+    },
+    {
+      "id": 2,
+      "name": "Planta de alterações"
+    },
+    {
+      "id": 3,
+      "name": "Planta de resultado"
+    }
+  ]
+  },
+  {
+    "group": "B",
+    "features": [
+      {
+        "id": 4,
+        "name": "Levantamento detalhado do Apartamento"
+      },
+      {
+        "id": 5,
+        "name": "Planta de alterações"
+      },
+      {
+        "id": 6,
+        "name": "Planta de resultado"
+      }
+    ]
+    }
+]
+// Opçoes
+[
+  {
+    "id": "Q1A-Q2A",
+    "featuresGroup": "Q1A",
+    "prices": [
+      {
+        "name": "Essencial",
+        "price": 4700,
+        "priveVatFree": 3821.14,
+        "includedFeatures": [
+          1
+        ]
+      },
+      {
+        "name": "Base",
+        "price": 6700,
+        "priveVatFree": 3821.14,
+        "includedFeatures": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Completo",
+        "price": 9700,
+        "priveVatFree": 3821.14,
+        "includedFeatures": [
+          1,
+          3
+        ]
+      }
+    ]
+  },
+  {
+    "id": "Q1A-Q2B",
+    "featuresGroup": "Q1A",
+    "prices": [
+      {
+        "name": "Essencial",
+        "price": 4700,
+        "priveVatFree": 3821.14,
+      },
+      {
+        "name": "Base",
+        "price": 6700,
+        "priveVatFree": 3821.14,
+      },
+      {
+        "name": "Completo",
+        "price": 9700,
+        "priveVatFree": 3821.14,
+      }
+    ]
+  },
+  {
+    "id": "Q1B-Q2A",
+    "featuresGroup": "Q1B",
+    "prices": [
+      {
+        "name": "Essencial",
+        "price": 4700,
+        "priveVatFree": 3821.14,
+      },
+      {
+        "name": "Base",
+        "price": 6700,
+        "priveVatFree": 3821.14,
+      },
+      {
+        "name": "Completo",
+        "price": 9700,
+        "priveVatFree": 3821.14,
+      }
+    ]
+  }
+  {
+    "id": "Q1B-Q2B",
+    "featuresGroup": "Q1B",
+    "prices": [
+      {
+        "name": "Essencial",
+        "price": 4700,
+        "priveVatFree": 3821.14,
+      },
+      {
+        "name": "Base",
+        "price": 6700,
+        "priveVatFree": 3821.14,
+      },
+      {
+        "name": "Completo",
+        "price": 9700,
+        "priveVatFree": 3821.14,
+      }
+    ]
+  }
+]
