@@ -2,6 +2,8 @@ import React from 'react'
 import Underline from '../underline'
 import Pack from './pack'
 import JsonData from '../../packs.json';
+import FAQ from '../faq';
+import Clarifications from '../clarifications';
 
 interface ResultProps {
   finalCode: string
@@ -139,6 +141,8 @@ export default function Result(props: ResultProps) {
           featuresNotIncluded={completeFeatures.notIncluded}
         />
       </div>
+      <Clarifications/>
+      <FAQ/>
     </div>
   );
 }
