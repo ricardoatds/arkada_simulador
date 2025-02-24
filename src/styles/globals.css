@@ -4,6 +4,10 @@
   --font-sans:
     var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --color-white: #FFFFFF;
+  --font-display: "Raleway", sans-serif;
+  --color-brand: #ffa629;
+  --color-price-gray: #231f2010
 }
 
 /*
@@ -15,6 +19,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -22,4 +27,19 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+
+  button {
+    cursor: pointer;
+
+  }
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/public/Raleway/Raleway-VariableFont_wght.ttf) format('ttf');
+
 }

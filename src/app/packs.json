@@ -1,0 +1,320 @@
+[
+  {
+    "code": "A",
+    "allFeatures": [
+      "Levantamento detalhado do Apartamento",
+      "Planta de alterações (Demolições e elementos novos)",
+      "Planta do Resultado final geral",
+      "Escolha de Equipamentos (Sanitários e Electrodomésticos",
+      "Lista de Empreiteiros recomendados para consulta",
+      "Livro em Formato Físico e Digital com todos os elementos",
+      "3 Imagens 3D Hiper-Realista (Cozinha + Sala + Quarto)",
+      "Planta de Infraestruturas (águas e Esgotos)",
+      "Projecto de Iluminação (Luzes, interruptores e Tomadas)",
+      "1 Corte detalhado do Apartamento",
+      "Desenho Detalhado de todas as porta e Janelas",
+      "Planta com todos os detalhes dos compartimentos (escala 1/50)",
+      "Plantas de Revestimentos",
+      "Desenho pormenorizado das Casas de banho",
+      "Desenho Pormenorizado da Cozinha",
+      "Desenhos detalhados de todo o mobiliário fixo",
+      "Mapa de quantidades para Orçamentação da empreitada"
+    ],
+    "packs": [
+      {
+        "name": "Essencial",
+        "features": [1,2,3,4,5,6,7]
+      },
+      {
+        "name": "Base",
+        "features": [1,2,3,4,5,6,7,8,9,10,11,12]
+      },
+      {
+        "name": "Completo",
+        "features": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+        "featuresOverrides": [
+          {
+            "featureId": 8,
+            "featureName": "4 Imagens 3D Hiper-realistas (Cozinha + sala + quarto + casa de banho)"
+          },
+          {
+            "featureId": 11,
+            "featureName": "2 Cortes detalhados do apartamento"
+          }
+        ]
+      }
+    ],
+    "prices": [
+      {
+        "code": "AAA",
+        "priceEssencial":  1950.00,
+        "priceBase":  3550,
+        "priceCompleto":  5250
+      },
+      {
+        "code": "AAB",
+        "priceEssencial": 2250,
+        "priceBase":  3850,
+        "priceCompleto":  5550
+      },
+      {
+        "code": "ABA",
+        "priceEssencial":  2200,
+        "priceBase":  3800,
+        "priceCompleto":  5500
+      },
+      {
+        "code": "ABB",
+        "priceEssencial":  2500,
+        "priceBase":  4100,
+        "priceCompleto":  5800
+      },{
+        "code": "ACA",
+        "priceEssencial":  2700,
+        "priceBase":  4300,
+        "priceCompleto":  6000
+      },
+      {
+        "code": "ACB",
+        "priceEssencial":  3000,
+        "priceBase":  4600,
+        "priceCompleto":  6300
+      },
+      {
+        "code": "ADB",
+        "priceEssencial":  3200,
+        "priceBase":  4800,
+        "priceCompleto":  6500
+      },
+      {
+        "code": "ADB",
+        "priceEssencial":  3500,
+        "priceBase":  5100,
+        "priceCompleto":  6800
+      }
+    ]
+  },
+  {
+    "code": "B",
+    "groupName": "Remodelação Moradia",
+    "allFeatures": [
+      "Levantamento topográfico georeferênciado (até 800m2 de área do lote)",
+      "Levantamento detalhado da Moradia",
+      "Plantas gerais do Resultado final",
+      "Planta de alterações (Demolições e elementos novos)",
+      "Alçados exteriores",
+      "Escolha de materiais",
+      "Escolha de equipamentos (sanitários e electrodomésticos)",
+      "Livro em formato Fisico e Digital com todos os elementos",
+      "Lista de empreiteiros recomendados para consulta",
+      "2 Imagens 3D Hiper-realistas (2x Interiores)",
+      "Planta de arranjos exteriores",
+      "Planta de Infraestruturas (águas e esgotos)",
+      "Projecto de Iluminação (interruptores e tomadas)",
+      "1 Corte detalhado da moradia",
+      "Desenho detalhado de todas as portas e janelas",
+      "Planta com todos os detalhes dos compartimentos (escala 1/50)",
+      "Plantas de Revestimentos",
+      "Corte construtivo",
+      "Desenho pormenorizado das casas de banho",
+      "Desenho pormenorizado da Cozinha",
+      "Desenhos detalhados de todo o mobiliário fixo",
+      "Mapa de quantidades para orçamentação da empreitada"
+    ],
+    "packs": [
+      {
+        "name": "Essencial",
+        "price":  1950.00,
+        "vatPrice": 1950.00,
+        "features": [1,2,3,4,5,6,7]
+      },
+      {
+        "name": "Base",
+        "price":  3550.00,
+        "vatPrice": 1950.00,
+        "features": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "featuresOverrides": [
+          {
+            "featureId": 10,
+            "featureName": "4 Imagens 3D Hiper-realistas (Exterior + cozinha + sala + quarto)"
+          }
+        ]
+      },
+      {
+        "name": "Completo",
+        "price":  3550.00,
+        "vatPrice": 1950.00,
+        "features": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+        "featuresOverrides": [
+          {
+            "featureId": 10,
+            "featureName": "6 Imagens 3D Hiper-realistas (Exterior + cozinha + sala + quarto)"
+          },
+          {
+            "featureId": 14,
+            "featureName": "2 Cortes detalhados da moradia"
+          }
+        ]
+      }
+    ],
+    "prices": [
+      {
+        "code": "BAA",
+        "priceEssencial":  3450,
+        "priceBase":  4450,
+        "priceCompleto":  6950
+      },
+      {
+        "code": "BAB",
+        "priceEssencial":  3750.00,
+        "priceBase":  4750,
+        "priceCompleto":  7250
+      },
+      {
+        "code": "BBA",
+        "priceEssencial":  3700,
+        "priceBase":  4700,
+        "priceCompleto":  7200
+      },
+      {
+        "code": "BBB",
+        "priceEssencial":  4000.00,
+        "priceBase":  5000,
+        "priceCompleto":  7500
+      },{
+        "code": "BCA",
+        "priceEssencial":  4700.00,
+        "priceBase":  5700,
+        "priceCompleto":  8200
+      },
+      {
+        "code": "BCB",
+        "priceEssencial":  5000.00,
+        "priceBase":  6000,
+        "priceCompleto":  8500
+      },
+      {
+        "code": "BDA",
+        "priceEssencial":  5200.00,
+        "priceBase":  6200,
+        "priceCompleto":  8700
+      },
+      {
+        "code": "BDB",
+        "priceEssencial":  5500.00,
+        "priceBase":  6500,
+        "priceCompleto":  9000
+      }
+      
+    ]
+  },
+  {
+    "code": "C",
+    "allFeatures": [
+      "Levantamento topográfico georeferênciado (até 800m2 de área do lote)",
+      "Plantas gerais do Resultado final",
+      "Planta de alterações",
+      "Alçados exteriores",
+      "Escolha de materiais",
+      "Escolha de equipamentos (sanitários e electrodomésticos)",
+      "Livro em formato Fisico e Digital com todos os elementos",
+      "Lista de empreiteiros recomendados para consulta",
+      "2 Imagens 3D Hiper-realistas (2x Exterior)",
+      "Planta de arranjos exteriores",
+      "Planta de Infraestruturas (águas e esgotos)",
+      "Projecto de Iluminação (interruptores e tomadas)",
+      "1 Corte detalhado da moradia",
+      "Desenho detalhado de todas as portas e janelas",
+      "Corte construtivo",
+      "Projecto de Arquitectura completo para Licenciamento",
+      "Projectos de Especialidades completo para Licenciamento",
+      "Submissão e acompanhamento do processo de Licenciamento",
+      "Planta com todos os detalhes dos compartimentos (escala 1/50)",
+      "Plantas de Revestimentos",
+      "Desenho pormenorizado das casas de banho",
+      "Desenho pormenorizado da Cozinha",
+      "Desenhos detalhados de todo o mobiliário fixo",
+      "Mapa de quantidades para orçamentação da empreitada"
+    ],
+    "packs": [
+      {
+        "name": "Essencial",
+        "features": [1,2,3,4,5,6,7,8,9]
+      },
+      {
+        "name": "Base",
+        "features": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+        "featuresOverrides": [
+          {
+            "featureId": 9,
+            "featureName": "4 Imagens 3D Hiper-realistas (2x Exterior + cozinha + sala)"
+          }
+        ]
+      },
+      {
+        "name": "Completo",
+        "features": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+        "featuresOverrides": [
+          {
+            "featureId": 9,
+            "featureName": "6 Imagens 3D Hiper-realistas (2x Exterior + cozinha + sala + quarto)"
+          },
+          {
+            "featureId": 13,
+            "featureName": "2 Cortes detalhados da moradia"
+          }
+        ]
+      }
+    ],
+    "prices": [
+      {
+        "code": "CAA",
+        "priceEssencial":  2950.00,
+        "priceBase":  9650,
+        "priceCompleto":  11950
+      },
+      {
+        "code": "CAB",
+        "priceEssencial":  3250.00,
+        "priceBase":  9950,
+        "priceCompleto":  12250
+      },
+      {
+        "code": "CBA",
+        "priceEssencial":  3200.00,
+        "priceBase":  9900,
+        "priceCompleto":  12200
+      },
+      {
+        "code": "CBB",
+        "priceEssencial":  3500.00,
+        "priceBase":  10200,
+        "priceCompleto":  12500
+      },
+      {
+        "code": "CCA",
+        "priceEssencial":  4600.00,
+        "priceBase":  11300,
+        "priceCompleto":  13600
+      },
+      {
+        "code": "CCB",
+        "priceEssencial":  4900.00,
+        "priceBase":  11600,
+        "priceCompleto":  13900
+      },
+      {
+        "code": "CDA",
+        "priceEssencial":  5100.00,
+        "priceBase":  11800,
+        "priceCompleto":  14100
+      },
+      {
+        "code": "CDB",
+        "priceEssencial":  5400.00,
+        "priceBase":  12100,
+        "priceCompleto":  14400
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "groupCode": "A",
+    "groupName": "Remodelação Apartamento",
+    "allFeatures": [
+      "Levantamento detalhado do Apartamento",
+      "Planta de alterações (Demolições e elementos novos)",
+      "Planta do Resultado final geral",
+      "Escolha de Equipamentos (Sanitários e Electrodomésticos",
+      "Lista de Empreiteiros recomendados para consulta",
+      "Livro em Formato Físico e Digital com todos os elementos",
+      "3 Imagens 3D Hiper-Realista (Cozinha + Sala + Quarto)",
+      "Planta de Infraestruturas (águas e Esgotos)",
+      "Projecto de Iluminação (Luzes, interruptores e Tomadas)",
+      "1 Corte detalhado do Apartamento",
+      "Desenho Detalhado de todas as porta e Janelas",
+      "Planta com todos os detalhes dos compartimentos (escala 1/50)",
+      "Plantas de Revestimentos",
+      "Desenho pormenorizado das Casas de banho",
+      "Desenho Pormenorizado da Cozinha",
+      "Desenhos detalhados de todo o mobiliário fixo",
+      "Mapa de quantidades para Orçamentação da empreitada"
+    ]
+  },
+  {
+    "groupCode": "B",
+    "groupName": "Remodelação Moradia",
+    "allFeatures": [
+      "Levantamento topográfico georeferênciado (até 800m2 de área do lote)",
+      "Levantamento detalhado da Moradia",
+      "Plantas gerais do Resultado final",
+      "Planta de alterações (Demolições e elementos novos)",
+      "Alçados exteriores",
+      "Escolha de materiais",
+      "Escolha de equipamentos (sanitários e electrodomésticos)",
+      "Livro em formato Fisico e Digital com todos os elementos",
+      "Lista de empreiteiros recomendados para consulta",
+      "2 Imagens 3D Hiper-realistas (2x Interiores)",
+      "Planta de arranjos exteriores",
+      "Planta de Infraestruturas (águas e esgotos)",
+      "Projecto de Iluminação (interruptores e tomadas)",
+      "1 Corte detalhado da moradia",
+      "Desenho detalhado de todas as portas e janelas",
+      "Planta com todos os detalhes dos compartimentos (escala 1/50)",
+      "Plantas de Revestimentos",
+      "Corte construtivo",
+      "Desenho pormenorizado das casas de banho",
+      "Desenho pormenorizado da Cozinha",
+      "Desenhos detalhados de todo o mobiliário fixo",
+      "Mapa de quantidades para orçamentação da empreitada"
+    ]
+  },
+  {
+    "groupCode": "C",
+    "groupName": "Terreno para Moradia",
+    "allFeatures": [
+      "Levantamento topográfico georeferênciado (até 800m2 de área do lote)",
+      "Plantas gerais do Resultado final",
+      "Planta de alterações",
+      "Alçados exteriores",
+      "Escolha de materiais",
+      "Escolha de equipamentos (sanitários e electrodomésticos)",
+      "Livro em formato Fisico e Digital com todos os elementos",
+      "Lista de empreiteiros recomendados para consulta",
+      "2 Imagens 3D Hiper-realistas (2x Exterior)",
+      "Planta de arranjos exteriores",
+      "Planta de Infraestruturas (águas e esgotos)",
+      "Projecto de Iluminação (interruptores e tomadas)",
+      "1 Corte detalhado da moradia",
+      "Desenho detalhado de todas as portas e janelas",
+      "Corte construtivo",
+      "Projecto de Arquitectura completo para Licenciamento",
+      "Projectos de Especialidades completo para Licenciamento",
+      "Submissão e acompanhamento do processo de Licenciamento",
+      "Planta com todos os detalhes dos compartimentos (escala 1/50)",
+      "Plantas de Revestimentos",
+      "Desenho pormenorizado das casas de banho",
+      "Desenho pormenorizado da Cozinha",
+      "Desenhos detalhados de todo o mobiliário fixo",
+      "Mapa de quantidades para orçamentação da empreitada"
+    ]
+  }
+]
