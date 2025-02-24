@@ -42,21 +42,40 @@ export default function Result(props: ResultProps) {
   const getPackPrices = (packData: PackData, finalCode: string): PackPrices => {
     const prices = packData.prices.find((price) => price.code === finalCode);
     return {
-      essencial: prices?.priceEssencial || 0,
-      base: prices?.priceBase || 0,
-      completo: prices?.priceCompleto || 0
+      essencial: prices?.priceEssencial ?? 0,
+      base: prices?.priceBase ?? 0,
+      completo: prices?.priceCompleto ?? 0
     };
   }
 
-  const getPackData = (): PackData=> {
+  const getPackData = (): PackData | undefined => {
     const typeCode = props.finalCode.charAt(0);
-    return JsonData.find((data: PackData) => data.code === typeCode) as PackData;
+    return JsonData.find((data: PackData) => data.code === typeCode);
   }
 
   const packData = getPackData();
-  const prices = packData ? getPackPrices(packData, props.finalCode) : { essencial: 0, base: 0, completo: 0 };
-
   if (!packData) return null;
+
+  const prices = getPackPrices(packData, props.finalCode);
+
+  const getPackFeatures = (packIndex: number) => {
+    const pack = packData.packs[packIndex];
+    if (!pack) return { included: [], notIncluded: [] };
+
+    const included = packData.allFeatures.filter((_, index) => 
+      pack.features.includes(index + 1)
+    );
+    
+    const notIncluded = packData.allFeatures.filter((_, index) => 
+      !pack.features.includes(index + 1)
+    );
+
+    return { included, notIncluded };
+  }
+
+  const essentialFeatures = getPackFeatures(0);
+  const baseFeatures = getPackFeatures(1);
+  const completeFeatures = getPackFeatures(2);
 
   return (
     <div className='mt-16 max-w-[875px] mb-16 flex flex-col items-center'>
@@ -79,12 +98,8 @@ export default function Result(props: ResultProps) {
           name="Essencial"
           finalPrice={prices.essencial}
           vatPrice={prices.essencial * 1.23}
-          featuresIncluded={(packData as PackData).allFeatures.filter((_, index) => 
-            packData.packs[0]!!.features.includes(index + 1)
-          )}
-          featuresNotIncluded={(packData as PackData).allFeatures.filter((_, index) => 
-            !packData.packs[0]!!.features.includes(index + 1)
-          )}
+          featuresIncluded={essentialFeatures.included}
+          featuresNotIncluded={essentialFeatures.notIncluded}
         />
         <Pack
           onSelected={console.log}
@@ -92,12 +107,8 @@ export default function Result(props: ResultProps) {
           name="Base"
           finalPrice={prices.base}
           vatPrice={prices.base * 1.23}
-          featuresIncluded={(packData as PackData).allFeatures.filter((_, index) => 
-            packData.packs[1]!!.features.includes(index + 1)
-          )}
-          featuresNotIncluded={(packData as PackData).allFeatures.filter((_, index) => 
-            !packData.packs[1]!!.features.includes(index + 1)
-          )}
+          featuresIncluded={baseFeatures.included}
+          featuresNotIncluded={baseFeatures.notIncluded}
         />
         <Pack
           onSelected={console.log}
@@ -105,10 +116,8 @@ export default function Result(props: ResultProps) {
           name="Completo"
           finalPrice={prices.completo}
           vatPrice={prices.completo * 1.23}
-          featuresIncluded={(packData as PackData).allFeatures.filter((_, index) => 
-            packData.packs[2]!!.features.includes(index + 1)
-          )}
-          featuresNotIncluded={[]}
+          featuresIncluded={completeFeatures.included}
+          featuresNotIncluded={completeFeatures.notIncluded}
         />
       </div>
     </div>
