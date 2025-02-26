@@ -3,6 +3,7 @@ import "~/styles/globals.css";
 import { type Metadata } from "next";
 
 import { TRPCReactProvider } from "~/trpc/react";
+import Footer from "./_components/footer";
 
 export const metadata: Metadata = {
   title: "Arkada - Simulador",
@@ -17,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <TRPCReactProvider>{children}</TRPCReactProvider>
+        <Footer/>
       </body>
+      
     </html>
   );
 }

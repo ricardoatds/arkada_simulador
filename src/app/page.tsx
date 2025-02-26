@@ -9,7 +9,6 @@ export default async function Home() {
     <HydrateClient>
       <main className="flex min-h-screen flex-col items-center text-black mx-6 mb-20">
         <Form/>
-        <Footer/>
       </main>
     </HydrateClient>
   );
