@@ -33,7 +33,7 @@ export default function Pack(props: PackProps) {
       <span className='pt-2 sm:pt-4 pb-1 sm:pb-2 relative flex flex-col items-center text-[14px] sm:text-[20px]'>
         <span className={`inline-block ${props.highlighted ? 'font-bold' : ''}`}> {props.name} </span>
         <Underline 
-          className={`h-2 ${props.highlighted ? 'w-14 sm:w-20' : 'w-0'}`}
+          className={`h-3 ${props.highlighted ? 'w-30 sm:w-30' : 'w-0'}`}
         />
       </span>
         <div className='flex flex-col h-full bg-price-gray items-center py-1 sm:py-4'>
@@ -45,9 +45,9 @@ export default function Pack(props: PackProps) {
           return (
             <div className='flex flex-row gap-2 items-start' key={index}>
               <div className='w-[22px] h-[22px] flex items-center justify-center -mt-1 sm:mt-[2px]'>
-                <FaCheck className='text-green-500 text-[8px] sm:text-[14px]' />
+                <FaCheck className='text-green-500 text-[10px] sm:text-[14px]' />
               </div>
-              <span className='text-[8px] sm:text-[14px] font-light flex-1'>{feature}</span>
+              <span className='text-[10px] sm:text-[14px] font-light flex-1'>{feature}</span>
             </div>
           )
         })}
@@ -55,9 +55,9 @@ export default function Pack(props: PackProps) {
           return (
             <div className='flex flex-row gap-2 items-start' key={index}>
               <div className='w-[22px] h-[22px] flex items-center justify-center -mt-1 sm:mt-[2px]'>
-                <RxCross2 className='text-red-500 text-[8px] sm:text-[14px]' />
+                <RxCross2 className='text-red-500 text-[10px] sm:text-[14px]' />
               </div>
-              <span className='text-[8px] sm:text-[14px] font-light flex-1'>{feature}</span>
+              <span className='text-[10px] sm:text-[14px] font-light flex-1'>{feature}</span>
             </div>
           )
         })}
