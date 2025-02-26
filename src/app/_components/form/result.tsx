@@ -4,6 +4,7 @@ import Pack from './pack'
 import JsonData from '../../packs.json';
 import FAQ from '../faq';
 import Clarifications from '../clarifications';
+import ScheduleButton from '../scheduleButton';
 
 interface ResultProps {
   finalCode: string
@@ -35,6 +36,7 @@ interface PriceDefinition {
 
 interface PackData {
   code: string;
+  resultText: string;
   allFeatures: string[];
   packs: PackDefinition[];
   prices: PriceDefinition[];
@@ -99,19 +101,16 @@ export default function Result(props: ResultProps) {
   const completeFeatures = getPackFeatures(2);
 
   return (
-    <div className='mt-16 sm:max-w-[875px] mb-16 flex flex-col items-center px-4'>
-      <div className='relative flex items-center justify-between w-full gap-0'>
+    <div className='mt-8 sm:max-w-[875px] mb-16 flex flex-col items-center'>
+      <p className='max-w-[300px] sm:max-w-[580px] font-display text-[14px] sm:text-[18px] font-medium text-center flex-grow'>{packData.resultText}</p>
+      <div className=' mt-8 relative flex items-center justify-between w-full gap-0'>
         <Underline className='w-20 sm:w-32 h-3 shrink-0' />
         <p className='sm:max-w-[580px] font-display text-[14px] sm:text-[18px] font-bold text-center flex-grow'>
           Escolha a sua Opção !
         </p>
         <Underline className='w-20 sm:w-32 h-3 shrink-0' />
       </div>
-      <p className='mt-8 text-[12px] sm:text-[18px] font-display font-light text-center'>
-        Fará apenas o <span className='font-semibold'>investimento inicial de 27€</span> para agendamento de reunião conforme a sua disponibilidade.<br className='hidden sm:inline' />
-        Isto ajuda a cobrir os custos com os diversos agendamentos que temos. Receberá este valor de volta em
-        formato de desconto caso adquira um dos nossos planos
-      </p>
+      
       <div className='flex flex-col sm:flex-row mt-8 gap-4 sm:gap-2 max-w-full sm:w-auto'>
         <Pack
           onSelected={setSelectedPack}
@@ -141,7 +140,20 @@ export default function Result(props: ResultProps) {
           featuresNotIncluded={completeFeatures.notIncluded}
         />
       </div>
-      <Clarifications/>
+      <div className='mt-16 relative flex items-center justify-between w-full gap-0'>
+        <Underline className='w-20 sm:w-32 h-3 shrink-0' />
+        <p className='sm:max-w-[580px] font-display text-[14px] sm:text-[18px] font-bold text-center flex-grow'>
+          Investimento Inicial Apenas 27€
+        </p>
+        <Underline className='w-20 sm:w-32 h-3 shrink-0' />
+      </div>
+      <ScheduleButton code={props.finalCode} selectedPlan={selectedPack}/>
+      <p className='mt-10 mb-16 text-[12px] sm:text-[18px] font-display font-light text-center'>
+        Fará apenas o <span className='font-semibold'>investimento inicial de 27€</span> para agendamento de reunião conforme a sua disponibilidade.<br className='hidden sm:inline' />
+        Isto ajuda a cobrir os custos com os diversos agendamentos que temos. Receberá este valor de volta em
+        formato de desconto caso adquira um dos nossos planos
+      </p>
+      <Clarifications code={props.finalCode} selectedPlan={selectedPack}/>
       <FAQ/>
     </div>
   );

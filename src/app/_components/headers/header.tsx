@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Underline from './underline'
+import Underline from '../underline'
 
 interface HeaderProps {
   className?: string;

@@ -5,6 +5,8 @@ import FirstStage from './firstStage'
 import SecondStage from './secondStage'
 import ThirdStage from './thirdStage'
 import Result from './result'
+import Header from '../headers/header'
+import ResultHeader from '../headers/resultHeader'
 
 export default function Form() {
   const [stage, setStage] = useState(0)
@@ -32,45 +34,58 @@ export default function Form() {
   }
 
   if (stage == 1) {
-    return <FirstStage
-      onOptionSelected={(option: string) => {
-        setCode([option])
-        setStage(2)
-      }}
-      onBackClick={() => setStage(0)}
-    />
+    return <>
+      <Header className="mt-14" />
+      <FirstStage
+        onOptionSelected={(option: string) => {
+          setCode([option])
+          setStage(2)
+        }}
+        onBackClick={() => setStage(0)}
+      />
+    </>
   }
 
   if (stage == 2) {
-    return <SecondStage
-      onOptionSelected={(option: string) => {
-        setCode([...code, option])
-        setStage(3)
-      }}
-      onBackClick={() => setStage(1)}
-    />
+    return <>
+      <Header className="mt-14" />
+      <SecondStage
+        onOptionSelected={(option: string) => {
+          setCode([...code, option])
+          setStage(3)
+        }}
+        onBackClick={() => setStage(1)}
+      />
+    </>
   }
 
   if (stage == 3) {
-    return <ThirdStage
-      onOptionSelected={(option: string) => {
-        setCode([...code, option])
-        setStage(4)
-      }}
-      onBackClick={() => setStage(2)}
-    />
+    return <>
+      <Header className="mt-14" />
+      <ThirdStage
+        onOptionSelected={(option: string) => {
+          setCode([...code, option])
+          setStage(4)
+        }}
+        onBackClick={() => setStage(2)}
+      />
+    </>
   }
 
-  if(stage == 4) {
-    return <Result
-      finalCode={code.join('')}
-    />
+  if (stage == 4) {
+    return <>
+      <ResultHeader className='mt-14'/>
+      <Result
+        finalCode={code.join('')}
+      />
+    </>
   }
-  
+
 
 
   return (
     <>
+      <Header className="mt-14" />
       {overView()}
     </>
   )

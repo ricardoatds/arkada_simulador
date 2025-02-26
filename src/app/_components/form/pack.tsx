@@ -25,7 +25,7 @@ const formatPrice = (price: number): string => {
 export default function Pack(props: PackProps) {
   return (
     <div 
-    className={`flex flex-col cursor-pointer w-full sm:w-[280px] gap-2 border rounded-sm ${props.highlighted ? 'border-black' : ''}`}
+    className={`flex flex-col cursor-pointer w-full sm:w-[280px] gap-2 border rounded-sm ${props.highlighted ? 'border-black border-2' : ''}`}
     onClick={() => {
       props.onSelected(props.name)
     }}
@@ -36,10 +36,10 @@ export default function Pack(props: PackProps) {
           className={`h-3 ${props.highlighted ? 'w-30 sm:w-30' : 'w-0'}`}
         />
       </span>
-        <div className='flex flex-col h-full bg-price-gray items-center py-1 sm:py-4'>
+        <div className='flex flex-col h-[50px] sm:h-[108px] bg-price-gray items-center py-1 sm:py-4'>
           <span className='text-[16px] sm:text-[28px] sm:text-[34px] font-black font-bold opacity-100'>{formatPrice(props.finalPrice)}€</span>
           <span className='text-[12px] sm:text-[14px] sm:text-[16px] text-[#000] font-light opacity-100'>{formatPrice(props.vatPrice)}€ c/IVA</span>
-      </div>
+        </div>
       <div className='px-4 pb-4 flex flex-col -gap-1 sm:gap-1'>
         {props.featuresIncluded.map((feature, index) => {
           return (

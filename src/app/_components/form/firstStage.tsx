@@ -23,7 +23,7 @@ export default function FirstStage(props: FirstStageProps) {
           <div
             className='flex flex-col items-center cursor-pointer'
             onClick={() => {
-              props.onOptionSelected('A')
+              props.onOptionSelected('C')
             }}
           >
             <Image layout='responsive' src={'/terreno.png'} alt={'Tenho um terreno'} width={165} height={192} />
@@ -32,32 +32,28 @@ export default function FirstStage(props: FirstStageProps) {
             </button>
           </div>
 
-          <div>
-            <div
-              className='flex flex-col items-center cursor-pointer'
-              onClick={() => {
-                props.onOptionSelected('B')
-              }}
-            >
-              <Image layout='responsive' src={'/apartamento.png'} alt={'Remodelação de Apartamento'} width={165} height={192} />
-              <button className='w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center'>
-                <span className='py-2 text-center'>Remodelação de um Apartamento</span>
-              </button>
-            </div>
+          <div
+            className='flex flex-col items-center cursor-pointer'
+            onClick={() => {
+              props.onOptionSelected('B')
+            }}
+          >
+            <Image layout='responsive' src={'/apartamento.png'} alt={'Remodelação de Apartamento'} width={165} height={192} />
+            <button className='w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center'>
+              <span className='py-2 text-center'>Remodelação de um Apartamento</span>
+            </button>
           </div>
 
-          <div>
-            <div
-              className='flex flex-col items-center cursor-pointer'
-              onClick={() => {
-                props.onOptionSelected('C')
-              }}
-            >
-              <Image layout='responsive' src={'/moradia.png'} alt={'Remodelação de Moradia'} width={165} height={192} />
-              <button className='w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center'>
-                <span className='py-2 text-center'>Remodelação de uma Moradia</span>
-              </button>
-            </div>
+          <div
+            className='flex flex-col items-center cursor-pointer'
+            onClick={() => {
+              props.onOptionSelected('A')
+            }}
+          >
+            <Image layout='responsive' src={'/moradia.png'} alt={'Remodelação de Moradia'} width={165} height={192} />
+            <button className='w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center'>
+              <span className='py-2 text-center'>Remodelação de uma Moradia</span>
+            </button>
           </div>
         </div>
 

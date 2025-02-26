@@ -1,6 +1,7 @@
 [
   {
     "code": "A",
+    "resultText": "Escolha o Plano que melhor se adequa ao projecto do seu apartamento",
     "allFeatures": [
       "Levantamento detalhado do Apartamento",
       "Planta de alterações (Demolições e elementos novos)",
@@ -97,7 +98,7 @@
   },
   {
     "code": "B",
-    "groupName": "Remodelação Moradia",
+    "resultText": "Escolha o Plano que melhor se adequa ao projecto da sua moradia",
     "allFeatures": [
       "Levantamento topográfico georeferênciado (até 800m2 de área do lote)",
       "Levantamento detalhado da Moradia",
@@ -211,6 +212,7 @@
   },
   {
     "code": "C",
+    "resultText": "Escolha o Plano que melhor se adequa ao projecto no seu terreno",
     "allFeatures": [
       "Levantamento topográfico georeferênciado (até 800m2 de área do lote)",
       "Plantas gerais do Resultado final",
