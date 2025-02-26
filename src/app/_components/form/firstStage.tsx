@@ -35,7 +35,7 @@ export default function FirstStage(props: FirstStageProps) {
           <div
             className='flex flex-col items-center cursor-pointer'
             onClick={() => {
-              props.onOptionSelected('B')
+              props.onOptionSelected('A')
             }}
           >
             <Image layout='responsive' src={'/apartamento.png'} alt={'Remodelação de Apartamento'} width={165} height={192} />
@@ -47,7 +47,7 @@ export default function FirstStage(props: FirstStageProps) {
           <div
             className='flex flex-col items-center cursor-pointer'
             onClick={() => {
-              props.onOptionSelected('A')
+              props.onOptionSelected('B')
             }}
           >
             <Image layout='responsive' src={'/moradia.png'} alt={'Remodelação de Moradia'} width={165} height={192} />
