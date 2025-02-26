@@ -13,13 +13,13 @@ export default function SecondStage(props: SecondStageProps) {
     <div>
       <div className='mt-16 flex flex-col items-center'>
         <div className='relative flex items-center justify-between w-full gap-0'>
-          <Underline className='w-70 h-3 shrink-0' />
-          <p className='max-w-[580px] font-display text-[18px] font-bold text-center flex-grow'>
+          <Underline className='w-20 sm:w-32 h-3 shrink-0' />
+          <p className='sm:max-w-[580px] font-display text-[14px] sm:text-[18px] font-bold text-center flex-grow'>
             2. Qual o tamanho da sua obra ?
-            <br/>
+            <br />
             <span>Area Bruta</span>
           </p>
-          <Underline className='w-70 h-3 shrink-0' />
+          <Underline className='w-20 sm:w-32 h-3 shrink-0' />
         </div>
         <div className='mt-8 flex flex-row gap-4'>
           <div
@@ -28,8 +28,10 @@ export default function SecondStage(props: SecondStageProps) {
               props.onOptionSelected('A')
             }}
           >
-            <Image src={'/escala01.png'} alt={'Escala01'} width={165} height={192} />
-            <button className='w-[185] p-2 font-display text-[14px] font-light text-black border-1 border-black rounded-md'>Até 80 m2</button>
+            <Image layout='responsive' src={'/escala01.png'} alt={'Escala01'} width={165} height={192} />
+            <button className='h-[48px] sm:h-[56px] sm:w-[185] p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md'>
+              <span>Até 80 m2</span>
+            </button>
           </div>
 
           <div>
@@ -39,8 +41,10 @@ export default function SecondStage(props: SecondStageProps) {
                 props.onOptionSelected('B')
               }}
             >
-              <Image src={'/escala02.png'} alt={'Escala02'} width={165} height={192} />
-              <button className='w-[185] p-2 font-display text-[14px] font-light text-black border-1 border-black rounded-md'>80 a 150 m2</button>
+              <Image layout='responsive' src={'/escala02.png'} alt={'Escala02'} width={165} height={192} />
+              <button className='h-[48px] sm:h-[56px] sm:w-[185] p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md'>
+                <span>80 a 150 m2</span>
+              </button>
             </div>
           </div>
 
@@ -51,8 +55,10 @@ export default function SecondStage(props: SecondStageProps) {
                 props.onOptionSelected('C')
               }}
             >
-              <Image src={'/escala03.png'} alt={'Escala03'} width={165} height={192} />
-              <button className='w-[185] p-2 font-display text-[14px] font-light text-black border-1 border-black rounded-md'>150 a 250 m2</button>
+              <Image layout='responsive' src={'/escala03.png'} alt={'Escala03'} width={165} height={192} />
+              <button className='h-[48px] sm:h-[56px] sm:w-[185] p-1 py-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md'>
+                <span>150 a 250 m2</span>
+                </button>
             </div>
           </div>
 
@@ -63,8 +69,10 @@ export default function SecondStage(props: SecondStageProps) {
                 props.onOptionSelected('C')
               }}
             >
-              <Image src={'/escala04.png'} alt={'Escala04'} width={165} height={192} />
-              <button className='w-[185] p-2 font-display text-[14px] font-light text-black border-1 border-black rounded-md'>+ 250 m2</button>
+              <Image layout='responsive' src={'/escala04.png'} alt={'Escala04'} width={165} height={192} />
+              <button className='h-[48px] sm:h-[56px] sm:w-[185] p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md'>
+                <span>+ 250 m2</span>
+              </button>
             </div>
           </div>
         </div>

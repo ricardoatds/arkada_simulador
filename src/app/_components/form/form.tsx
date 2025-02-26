@@ -13,7 +13,7 @@ export default function Form() {
   const overView = () => {
     return (
       <div className='flex flex-col items-center'>
-        <p className='mt-8 max-w-[600px] font-display text-[18px] font-light text-center'>
+        <p className='mt-8 sm:max-w-[600px] font-display text-[14px] sm:text-[18px] font-light text-center'>
           <span className='font-semibold'>Poupe até 20% </span>
           do valor de construção com um projecto
           <br />
