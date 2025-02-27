@@ -101,7 +101,7 @@ export default function Result(props: ResultProps) {
   const completeFeatures = getPackFeatures(2);
 
   return (
-    <div className='mt-8 sm:max-w-[875px] mb-16 flex flex-col items-center'>
+    <div className='fade-in mt-8 sm:max-w-[875px] mb-16 flex flex-col items-center'>
       <p className='max-w-[300px] sm:max-w-[580px] font-display text-[14px] sm:text-[18px] font-medium text-center flex-grow'>{packData.resultText}</p>
       <div className=' mt-8 relative flex items-center justify-between w-full gap-0'>
         <Underline className='w-20 sm:w-32 h-3 shrink-0' />

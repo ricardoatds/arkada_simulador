@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@tailwind utilities;
+
 /*
   ---break---
 */
@@ -15,7 +17,8 @@
   --color-white: #FFFFFF;
   --font-display: "Raleway", sans-serif;
   --color-brand: #ffa629;
-  --color-price-gray: #231f2010
+
+  --color-price-gray: #231f2010;
 }
 
 /*
@@ -105,7 +108,8 @@
   --chart-5:
     oklch(0.769 0.188 70.08);
   --radius:
-    0.625rem;;
+    0.625rem;
+  ;
   --sidebar:
     oklch(0.985 0 0);
   --sidebar-foreground:
@@ -121,7 +125,8 @@
   --sidebar-border:
     oklch(0.922 0 0);
   --sidebar-ring:
-    oklch(0.87 0 0);}
+    oklch(0.87 0 0);
+}
 
 /*
   ---break---
@@ -191,7 +196,8 @@
   --sidebar-border:
     oklch(0.269 0 0);
   --sidebar-ring:
-    oklch(0.439 0 0);}
+    oklch(0.439 0 0);
+}
 
 /*
   ---break---
@@ -272,22 +278,33 @@
     var(--sidebar-ring);
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+
   /*
   ---break---
 */
   @keyframes accordion-down {
     from {
-      height: 0;}
+      height: 0;
+    }
+
     to {
-      height: var(--radix-accordion-content-height);}}
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
   /*
   ---break---
 */
   @keyframes accordion-up {
     from {
-      height: var(--radix-accordion-content-height);}
+      height: var(--radix-accordion-content-height);
+    }
+
     to {
-      height: 0;}}}
+      height: 0;
+    }
+  }
+}
 
 /*
   ---break---
@@ -295,6 +312,38 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;}
+    @apply border-border outline-ring/50;
+  }
+
   body {
-    @apply bg-background text-foreground;}}
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Define fade animations using standard CSS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@layer utilities {
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+  }
+}

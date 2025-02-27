@@ -11,7 +11,7 @@ interface SecondStageProps {
 export default function SecondStage(props: SecondStageProps) {
   return (
     <div>
-      <div className='mt-16 flex-col items-center'>
+      <div className='fade-in mt-16 flex-col items-center'>
         <div className='relative flex items-center justify-between w-full gap-0'>
           <Underline className='w-20 sm:w-32 h-3 shrink-0' />
           <p className='sm:max-w-[580px] font-display text-[14px] sm:text-[18px] font-bold text-center flex-grow'>
@@ -23,7 +23,7 @@ export default function SecondStage(props: SecondStageProps) {
         </div>
         <div className='mt-8 grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-4 px-4 sm:px-0'>
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => {
               props.onOptionSelected('A')
             }}
@@ -35,7 +35,7 @@ export default function SecondStage(props: SecondStageProps) {
           </div>
 
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => {
               props.onOptionSelected('B')
             }}
@@ -47,7 +47,7 @@ export default function SecondStage(props: SecondStageProps) {
           </div>
 
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => {
               props.onOptionSelected('C')
             }}
@@ -59,7 +59,7 @@ export default function SecondStage(props: SecondStageProps) {
           </div>
 
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => {
               props.onOptionSelected('D')
             }}
@@ -73,7 +73,7 @@ export default function SecondStage(props: SecondStageProps) {
 
       </div>
       <button
-        className='mt-4 relative'
+        className='mt-4 relative transition-all duration-300 ease-in-out transform hover:translate-y-1'
         onClick={() => {
           props.onBackClick()
         }}

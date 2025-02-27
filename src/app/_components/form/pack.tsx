@@ -25,7 +25,7 @@ const formatPrice = (price: number): string => {
 export default function Pack(props: PackProps) {
   return (
     <div 
-    className={`flex flex-col cursor-pointer w-full sm:w-[280px] gap-2 border rounded-sm ${props.highlighted ? 'border-black border-2' : ''}`}
+    className={`flex flex-col cursor-pointer w-full sm:w-[280px] gap-2 border rounded-sm transition-all duration-300 ease-in-out transform hover:-translate-y-1 ${props.highlighted ? 'border-black border-2' : ''}`}
     onClick={() => {
       props.onSelected(props.name)
     }}

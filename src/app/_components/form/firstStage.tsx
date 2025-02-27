@@ -11,7 +11,7 @@ interface FirstStageProps {
 export default function FirstStage(props: FirstStageProps) {
   return (
     <div>
-      <div className='mt-16 flex flex-col max-w-screen items-center'>
+      <div className='fade-in mt-16 flex flex-col max-w-screen items-center'>
         <div className='relative flex items-center justify-between w-full sm:gap-2 mx-6'>
           <Underline className='w-20 sm:w-32 h-3 shrink-0' />
           <p className='max-w-[200px] sm:max-w-[580px] font-display text-[14px] sm:text-[18px] font-bold text-center flex-grow'>
@@ -21,19 +21,19 @@ export default function FirstStage(props: FirstStageProps) {
         </div>
         <div className='mt-8 flex flex-row gap-0 sm:gap-4'>
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => {
               props.onOptionSelected('C')
             }}
           >
             <Image layout='responsive' src={'/terreno.png'} alt={'Tenho um terreno'} width={165} height={192} />
             <button className='w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center'>
-              <span className='py-2 text-center'>Tenho um terreno e vou fazer uma casa</span>
+              <span className=' py-2 text-center'>Tenho um terreno e vou fazer uma casa</span>
             </button>
           </div>
 
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => {
               props.onOptionSelected('A')
             }}
@@ -45,7 +45,7 @@ export default function FirstStage(props: FirstStageProps) {
           </div>
 
           <div
-            className='flex flex-col items-center cursor-pointer'
+            className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1 '
             onClick={() => {
               props.onOptionSelected('B')
             }}
@@ -59,7 +59,7 @@ export default function FirstStage(props: FirstStageProps) {
 
       </div>
       <button
-        className='mt-4 relative'
+        className='mt-4 relative transition-all duration-300 ease-in-out transform hover:translate-y-1'
         onClick={() => {
           props.onBackClick()
         }}
