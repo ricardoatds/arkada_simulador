@@ -6,11 +6,24 @@ import ThirdStage from './thirdStage'
 import Result from './result'
 import Header from '../headers/header'
 import ResultHeader from '../headers/resultHeader'
-import { useState } from 'react'
+import { useSessionStorage } from 'usehooks-ts'
+import { useEffect, useState } from 'react'
 
 export default function Form() {
-  const [stage, setStage] = useState(0)
-  const [code, setCode] = useState<string[]>([])
+  const [stage, setStage] = useSessionStorage('form-stage', 0)
+  const [code, setCode] = useSessionStorage<string[]>('form-code', [])
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+    if (code.length === 0 && stage !== 0) {
+      setStage(0)
+    }
+  }, [])
+
+  if (!isClient) {
+    return <div className="min-h-screen" /> // or loading state
+  }
 
   const overView = () => {
     return (
@@ -24,7 +37,7 @@ export default function Form() {
         </p>
         <Image className='mt-8' src={'/overview.png'} alt={'Projecto'} width={297} height={297} />
         <button
-          className='mt-8 w-[225px] h-[40px] font-display text-[18px] font-medium text-white bg-black rounded-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101 drop-shadow-xl'
+          className='mt-8 w-[225px] h-[40px] font-display text-[18px] font-medium text-white bg-black rounded-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-101 drop-shadow-xl active:opacity-0'
           onClick={() => setStage(1)}
         >
           Começar
