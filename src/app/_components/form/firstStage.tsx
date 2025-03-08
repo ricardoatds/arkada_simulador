@@ -34,7 +34,7 @@ export default function FirstStage(props: FirstStageProps) {
             className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => handleOptionClick('C')}
           >
-            <Image layout='responsive' src={'/terreno.png'} alt={'Tenho um terreno'} width={165} height={192} />
+            <Image className='max-w-[185x]' layout='responsive' src={'/terreno.png'} alt={'Tenho um terreno'} width={165} height={192} />
             <button className={`w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center transition-colors duration-300 ${selectedOption === 'C' ? 'bg-[#ffa629] border-white text-white border-0' : 'text-black border-1 border-black'}`}>
               <span className='py-2 text-center'>Tenho um terreno e vou fazer uma casa</span>
             </button>
@@ -44,7 +44,7 @@ export default function FirstStage(props: FirstStageProps) {
             className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => handleOptionClick('A')}
           >
-            <Image layout='responsive' src={'/apartamento.png'} alt={'Remodelação de Apartamento'} width={165} height={192} />
+            <Image className='max-w-[185x]' layout='responsive' src={'/apartamento.png'} alt={'Remodelação de Apartamento'} width={165} height={192} />
             <button className={`w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center transition-colors duration-300 ${selectedOption === 'A' ? 'bg-[#ffa629] border-white text-white border-0' : 'text-black border-1 border-black'}`}>
               <span className='py-2 text-center'>Remodelação de um Apartamento</span>
             </button>
@@ -54,7 +54,7 @@ export default function FirstStage(props: FirstStageProps) {
             className='flex flex-col items-center cursor-pointer transition-all duration-300 ease-in-out transform hover:-translate-y-1'
             onClick={() => handleOptionClick('B')}
           >
-            <Image layout='responsive' src={'/moradia.png'} alt={'Remodelação de Moradia'} width={165} height={192} />
+            <Image  className='max-w-[185x]'layout='responsive' src={'/moradia.png'} alt={'Remodelação de Moradia'} width={165} height={192} />
             <button className={`w-[100px] sm:w-[185px] h-[56px] p-1 sm:p-2 font-display text-[12px] sm:text-[14px] font-light text-black border-1 border-black rounded-md flex items-center justify-center transition-colors duration-300 ${selectedOption === 'B' ? 'bg-[#ffa629] border-white text-white border-0' : 'text-black border-1 border-black'}`}>
               <span className='py-2 text-center'>Remodelação de uma Moradia</span>
             </button>
